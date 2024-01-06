@@ -2,11 +2,17 @@ import { Box } from "@mui/material";
 import React from "react";
 import { RiCheckboxBlankLine } from "react-icons/ri";
 
+interface iSettings {
+  onHoverSettings: any;
+  handleSettingsHover: any;
+  handleSettingsHoverClose: any;
+}
+
 const Settings = ({
   onHoverSettings,
   handleSettingsHover,
   handleSettingsHoverClose,
-}) => {
+}: iSettings) => {
   if (onHoverSettings)
     return (
       <Box

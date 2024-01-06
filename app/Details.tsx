@@ -2,11 +2,17 @@ import { Box } from "@mui/material";
 import { list } from "postcss";
 import React from "react";
 
+interface iDetails {
+  onHoverDetails: any;
+  handleDetailsHover: any;
+  handleDetailsHoverClose: any;
+}
+
 const Details = ({
   onHoverDetails,
   handleDetailsHover,
   handleDetailsHoverClose,
-}) => {
+}: iDetails) => {
   const info = [
     {
       title: "Name/Title",

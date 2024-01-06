@@ -9,7 +9,12 @@ import { IoFilterOutline } from "react-icons/io5";
 import { CiCircleChevRight } from "react-icons/ci";
 import { CiLocationArrow1 } from "react-icons/ci";
 
-const Legends = ({ onHoverLegend, handleLegendHover }) => {
+interface ilegends {
+  onHoverLegend: any;
+  handleLegendHover: any;
+}
+
+const Legends = ({ onHoverLegend, handleLegendHover }: ilegends) => {
   if (onHoverLegend)
     return (
       <div className="" onMouseOver={handleLegendHover}>
