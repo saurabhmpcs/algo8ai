@@ -78,8 +78,8 @@ const TabList = () => {
         Trip Tags
       </div>
       <div className=" overflow-y-scroll h-full scrollbar-hide ">
-        {tripTags.map((item) => (
-          <Box className="flex flex-col  w-[280px]   ">
+        {tripTags.map((item, index) => (
+          <Box className="flex flex-col  w-[280px]   " key={index}>
             <Card className="bg-white max-h-24 max-w-96 relative rounded-none mb-1 shadow-md">
               <CardContent className=" ">
                 <div className="flex flex-col gap-y-3 max-w-72">

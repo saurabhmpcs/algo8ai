@@ -108,9 +108,12 @@ const Details = ({
 
         <div className="border-b border-gray-300 sticky top-0 z-10">
           {" "}
-          {info.map((item) => (
+          {info.map((item, index) => (
             <Box>
-              <div className="flex items-center gap-x-1 m-1 px-2 text-sm sticky top0 text-slate-600  ">
+              <div
+                className="flex items-center gap-x-1 m-1 px-2 text-sm sticky top0 text-slate-600  "
+                key={index}
+              >
                 {" "}
                 <p className="w-24">{item.title}</p> :{" "}
                 <p className="w-38 ">{item.type}</p>{" "}
@@ -121,9 +124,12 @@ const Details = ({
 
         <div>
           {" "}
-          {List.map((item) => (
+          {List.map((item, index) => (
             <Box>
-              <div className="flex items-center gap-x-1 m-1 px-2 text-sm  text-slate-600 -z-10 ">
+              <div
+                className="flex items-center gap-x-1 m-1 px-2 text-sm  text-slate-600 -z-10 "
+                key={index}
+              >
                 {" "}
                 <p className="w-24">{item.title}</p> :{" "}
                 <p className="w-38 ">{item.type}</p>{" "}

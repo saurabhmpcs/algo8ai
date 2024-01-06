@@ -24,10 +24,10 @@ const InfoCard = () => {
     <div>
       <Box className="h-fit mx-2 w-fit my-6 ">
         <Grid className=" grid grid-cols-4 gap-x-12 ">
-          {infoCard.map((item) => (
+          {infoCard.map((item, index) => (
             <Grid className="max-h-32 max-w-60">
               <Card className="bg-white max-h-20 max-w-[250px] relative">
-                <CardContent className=" ">
+                <CardContent className=" " key={index}>
                   <div className="flex flex-col gap-y-3 max-w-72">
                     <p className="font-light text-xs "> {item.title}</p>
                     <div className=" ">
