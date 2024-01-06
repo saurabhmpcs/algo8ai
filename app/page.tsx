@@ -39,6 +39,7 @@ import Graph from "./Graph";
 import TabList from "./TabList";
 import Settings from "./Settings";
 import { BiExitFullscreen } from "react-icons/bi";
+import Image from "next/image";
 
 const drawerWidth = 240;
 
@@ -207,7 +208,7 @@ export default function MiniDrawer() {
             )}
           </List>
           <Box className="mt-auto ml-1 flex bg-gray-200 h-10">
-            <img
+            <Image
               src="https://algo8.ai/wp-content/uploads/2023/03/Logo-Color.png"
               alt=""
               className="bg-white w-24 px-2.5 ml-3"
