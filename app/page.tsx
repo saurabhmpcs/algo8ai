@@ -208,7 +208,7 @@ export default function MiniDrawer() {
             )}
           </List>
           <Box className="mt-auto ml-1 flex bg-gray-200 h-10">
-            <Image
+            <img
               src="https://algo8.ai/wp-content/uploads/2023/03/Logo-Color.png"
               alt=""
               className="bg-white w-24 px-2.5 ml-3"
@@ -255,7 +255,7 @@ export default function MiniDrawer() {
           </Box>
         </Box>
 
-        <Box className={` h-full scrollbar-hide overflow-y-scroll `}>
+        <Box className="h-fit bg-gray-300 ">
           {/* Wet Compressor box horizontal */}
           <Box className="flex flex-row justify-between ml-2 ">
             <Box className="flex gap-x-1 flex-row">
@@ -275,12 +275,10 @@ export default function MiniDrawer() {
           </Box>
           {/* Underdevelop box */}
 
-          <Box
-            className={` flex flex-row gap-x-4 h-full scrollbar-hide overflow-y-scroll z-50 `}
-          >
+          <Box className={` flex flex-row gap-x-4 h-fit z-50 bg-gray-400`}>
             <Box
-              className={`bg-gray-200 mt-6 h-full shadow-md w-full ml-24 z-50 relative ${
-                expansion ? "w-full" : "w-[700px]"
+              className={`bg-gray-200 mt-6 h-full shadow-xl rounded-md w-full ml-24 z-50 relative ${
+                expansion ? "w-full" : "w-[650px]"
               }`}
             >
               <Box>
@@ -348,9 +346,9 @@ export default function MiniDrawer() {
             </Box>
 
             {!expansion && (
-              <Box className=" w-2/3 scrollbar-hide h-full overflow-y-scroll">
+              <Box className=" w-2/3 ">
                 <InfoCard />
-                <Box className="flex flex-row gap-x-4">
+                <Box className="flex flex-row gap-x-4 mr-2">
                   {" "}
                   <Graph /> <TabList />
                 </Box>

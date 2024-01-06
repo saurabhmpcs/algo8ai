@@ -22,7 +22,7 @@ const InfoCard = () => {
 
   return (
     <div>
-      <Box className="h-fit mx-2 w-fit my-6 ">
+      <Box className="h-fit mx-1 w-fit my-3 ">
         <Grid className=" grid grid-cols-4 gap-x-12 ">
           {infoCard.map((item, index) => (
             <Grid className="max-h-32 max-w-60" key={index}>

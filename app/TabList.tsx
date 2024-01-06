@@ -73,7 +73,7 @@ const TabList = () => {
   ];
 
   return (
-    <Box className="bg-slate-100 rounded-lg w-fit h-[500px] overflow-y-scroll scrollbar-hide  ">
+    <Box className="bg-slate-100 rounded-lg w-fit h-[400px] overflow-y-scroll scrollbar-hide ">
       <div className="p-1 bg-white px-4 py-4 text-gray-400  sticky top-0 mb-1 h-16 z-10">
         Trip Tags
       </div>
