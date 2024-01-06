@@ -86,8 +86,8 @@ const Legends = ({ onHoverLegend, handleLegendHover }) => {
                 item: "Tag Values",
                 icon: <CiWarning />,
               },
-            ].map((item) => (
-              <Box className="  ">
+            ].map((item, index) => (
+              <Box className="  " key={index}>
                 <div className="flex items-center gap-x-1 ml-2 mb-1  text-slate-600 ">
                   {" "}
                   <span>{item.icon}</span>{" "}
